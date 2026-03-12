@@ -2,7 +2,7 @@ import requests
 
 try:
     res = requests.post(
-        "http://localhost:8000/api/generate-brand",
+        "https://aiautomation-3.onrender.com/api/generate-brand",
         json={
             "business_name": "TestCorp",
             "industry": "Software",
