@@ -21,7 +21,7 @@ class BrandRequest(BaseModel):
     style: str
 
 # Use the latest text generation model
-MODEL_NAME = "gemini-2.0-flash"
+MODEL_NAME = "gemini-1.5-flash"
 
 @router.post("/generate-brand")
 async def generate_brand(request: BrandRequest):
