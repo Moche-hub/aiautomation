@@ -18,7 +18,7 @@ const LogoGenerator = () => {
     setSvgResult('');
     
     try {
-      const response = await fetch('http://localhost:8000/api/generate-logo', {
+      const response = await fetch('https://aiautomation-3.onrender.com/api/generate-logo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
