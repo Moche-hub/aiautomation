@@ -19,7 +19,7 @@ const BrandGenerator = () => {
     setResult(null);
     
     try {
-      const response = await fetch('http://localhost:8000/api/generate-brand', {
+      const response = await fetch('https://aiautomation-3.onrender.com/api/generate-brand', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
